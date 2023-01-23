@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Детали курса" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{ "header": "header" })
+      <main class="page bg-white">
+       <section class="course-mainscreen">
+        <div class="course-mainscreen__container d-flex jc-sb ai-start">
+          <div class="elipse course-mainscreen__elipse">
+            <img src="@img/icons/elipse.svg" alt="Elipse" />
+          </div>
+          <div class="course-mainscreen__img img-bg img-bg_t-l">
+            <img class="img-w-100p" data-src="@img/coursers/6.jpg" alt="Базовый курс для начинающих «COOL-master»">
+          </div>
+          <div class="course-mainscreen__content">
+            <h2 class="course-mainscreen__title title title_s30">
+              Базовый курс для начинающих 
+              <span class="pink-color"> «COOL-master»</span>
+            </h2>
+            <p class="course-mainscreen__text text text_grey">
+              Курс по обучению перманентному макияжу 3 зон «V-permanent». Раскрываем все секреты профессии, делимся знаниями и лайфхаками, которые мастера нарабатывали годами
+            </p>
+            <button data-goto=".learn-new" class="course-mainscreen__btn button" type="button">
+              <span>хочу на бесплатный урок</span>
+            </button>
+          </div>
+        </div>
+       </section>
+       <section class="on-course section-pb-120">
+        <div class="on-course__container">
+          <h3 class="on-course__title title title_mb-40 title_black title_s40 text-center">На курсе</h3>
+          <div class="on-course__content d-grid col-lg-50">
+            <div class="on-course__item item-on-course d-flex ai-start">
+              <div class="item-on-course__img-wrap img-bg">
+                <div class="item-on-course__img d-flex ai-center jc-center">
+                  <img class="img-fluid" src="@img/on-course/1.png" alt="Индивидуальное обучение — 1 на 1 с преподавателем!">
+                </div>
+              </div>  
+                <div class="item-on-course__content">
+                  <h6 class="item-on-course__title text text_black fw-900">Индивидуальное обучение — 1 на 1 с преподавателем!</h6>
+                  <p class="item-on-course__text text text_black">Только в таком формате можно добиться качественного обучения, получить ответы на все вопросы.</p>
+              </div>
+            </div>
+            <div class="on-course__item item-on-course d-flex ai-start">
+              <div class="item-on-course__img-wrap img-bg">
+                <div class="item-on-course__img d-flex ai-center jc-center">
+                  <img class="img-fluid" src="@img/on-course/2.png" alt="Преподаватели с большим опытом">
+                </div>
+              </div>
+              <div class="item-on-course__content">
+                <h6 class="item-on-course__title text text_black fw-900">Преподаватели с большим опытом</h6>
+                <p class="item-on-course__text text text_black">
+                  Профессионалы <span class="dark-pink-color">высокого уровня</span>, победители чемпионатов, спикеры всероссийских форумов
+                </p>
+              </div>
+            </div>
+            <div class="on-course__item item-on-course d-flex ai-start">
+              <div class="item-on-course__img-wrap img-bg">
+                <div class="item-on-course__img d-flex ai-center jc-center">
+                  <img class="img-fluid" src="@img/on-course/3.png" alt="Дружный коллектив">
+                </div>
+              </div>
+              <div class="item-on-course__content">
+                <h6 class="item-on-course__title text text_black fw-900">Дружный коллектив</h6>
+                <p class="item-on-course__text text text_black">
+                  В гимназии всегда царит приятная и <span class="dark-pink-color">позитивная атмосфера</span>. Наша школа — место, куда хочется возвращаться
+                </p>
+              </div>
+            </div>
+            <div class="on-course__item item-on-course d-flex ai-start">
+              <div class="item-on-course__img-wrap img-bg">
+                <div class="item-on-course__img d-flex ai-center jc-center">
+                  <img class="img-fluid" src="@img/on-course/4.png" alt="Поддержка после обучения">
+                </div>
+              </div>
+              <div class="item-on-course__content">
+                <h6 class="item-on-course__title text text_black fw-900">Поддержка после обучения</h6>
+                <p class="item-on-course__text text text_black">
+                  <span class="dark-pink-color">Поддержка после обучения в течении года</span> и ответы на все вопросы в общем чате для учеников и выпускников гимназии
+                </p>
+              </div>
+            </div>
+            <div class="on-course__item item-on-course d-flex ai-start">
+              <div class="item-on-course__img-wrap img-bg">
+                <div class="item-on-course__img d-flex ai-center jc-center">
+                  <img class="img-fluid" src="@img/on-course/5.png" alt="Отработка и закрепление изученного">
+                </div>
+              </div>
+              <div class="item-on-course__content">
+                <h6 class="item-on-course__title text text_black fw-900">Отработка и закрепление изученного</h6>
+                <p class="item-on-course__text text text_black">
+                  Через месяц после обучения- отработка и <span class="dark-pink-color">закрепление навыков</span> и техники на модели в подарок!
+                </p>
+              </div>
+            </div>
+            <div class="on-course__item item-on-course d-flex ai-start">
+              <div class="item-on-course__img-wrap img-bg">
+                <div class="item-on-course__img d-flex ai-center jc-center">
+                  <img class="img-fluid" src="@img/on-course/6.png" alt="Если появились пробелы">
+                </div>
+              </div>
+              <div class="item-on-course__content">
+                <h6 class="item-on-course__title text text_black fw-900">Если появились пробелы</h6>
+                <p class="item-on-course__text text text_black">
+                  Если в работе появились какие- то пробелы, преподаватель вместе с Вами <span class="dark-pink-color">еще раз проведет процедуру</span> любой зоны и ответит на все вопросы
+                </p>
+              </div>
+            </div>
+            <div class="on-course__item item-on-course d-flex ai-start">
+              <div class="item-on-course__img-wrap img-bg">
+                <div class="item-on-course__img d-flex ai-center jc-center">
+                  <img class="img-fluid" src="@img/on-course/7.png" alt="Перспектива трудоустройство">
+                </div>
+              </div>
+              <div class="item-on-course__content">
+                <h6 class="item-on-course__title text text_black fw-900">Перспектива трудоустройство</h6>
+                <p class="item-on-course__text text text_black">
+                  По итогам обучения <span class="dark-pink-color">возможно трудоустройство</span> в гимназию с перспективой роста и развития
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
+       <section class="course-you-get">
+        <div class="course-you-get__container">
+          <div class="elipse course-you-get__elipse">
+            <img src="@img/icons/elipse.svg" alt="Elipse" />
+          </div>
+          <h2 class="course-you-get__title title title_s40 title_black d-flex direction-col">
+            <span class="dark-pink-color">Что вы получаете</span>
+            <span class="as-end">после курса</span>
+          </h2>
+          <div class="course-you-get__content d-flex ai-start jc-sb">
+            <div class="course-you-get__item item-course-get item-course-get_bg img-bg img-bg_l">
+              <div class="item-course-get__content">
+                <div class="coursers__oval-line item-course-get__oval-line">
+                  <span>Подарки на курсе</span>
+                  <div class="coursers-oval__img">
+                    <img class="img-fluid" src="@img/coursers/line.svg" alt="Oval" />
+                  </div>
+                </div>
+                <div class="item-course-get__icon">
+                  <img class="img-fluid" data-src="@img/coursers-you-get/1.png" alt="Подарки на курсе">
+                </div>
+                <ul class="item-course-get__list list">
+                  <li class="list__item text">Фотосессия в подарок</li>
+                  <li class="list__item text">Курс по удалению Ремувером в подарок</li>
+                  <li class="list__item text">Курс по продвижению в социальных сетях в подарок</li>
+                </ul>
+              </div>
+            </div>
+            <div class="course-you-get__item item-course-get item-course-get_no-bg">
+              <div class="item-course-get__text text text_black">
+                <p class="fw-900">
+                  После окончания курса у Вас будет <span class="pink-color">готовое портфолио</span> для того, чтобы продвигать и развивать себя в социальных сетях
+                </p>
+                <p>
+                  Каждый день ведется активная фото и видео съемка для того, чтобы после курса Вы имели необходимый «пакет» материалов для начального этапа развития. В вашем портфолио булдут фотографии мастера и ученика, а также фотографии и видео сделанных работ)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
+       <section class="programm-course bg-dark">
+        <div class="programm-course__container">
+          <h2 class="programm-course__title title title_mb-40">
+            <p>Программа</p>
+            <p class="pink-color text-end">курса</p>
+          </h2>
+          <div data-spollers class="programm-course-spollers">
+            <div class="programm-course-spollers__spoller">
+              <button type="button" data-spoller class="programm-course-spollers__btn d-flex jc-sb direction-row-rev _icon-arrow-down img-w-100p _spoller-active">
+                <div class="programm-course-spollers__title-text d-flex ai-center">
+                  <div class="programm-course-spollers__oval-line">
+                    <div class="w-space-no-wrap title title_s30">1 день.</div>
+                    <div class="programm-course-spollers__oval-img">
+                      <img class="img-fluid" src="@img/coursers/line.svg" alt="Oval" />
+                    </div>
+                  </div>
+                  <div class="programm-course-spollers__title text-start">Введение в профессию</div>
+                </div>
+              </button>
+              <div class="programm-course-spollers__body">
+                <div class="programm-course-spollers__content d-grid col-lg-33 col-md-50">
+                  <ul class="programm-course-spollers__list list">
+                    <li class="programm-course-spollers__item list__item text">Перманентный макияж. Виды техник</li>
+                    <li class="programm-course-spollers__item list__item text">Рабочее место мастера. Обзор основных и вспомогательных расходных материалов для проведения процедуы</li>
+                    <li class="programm-course-spollers__item list__item text">Подготовка полного списка материалов и инструментов, необходимых для работы мастера перманентного макияжа</li>
+                    <li class="programm-course-spollers__item list__item text">Асептика и антисептика</li>
+                    <li class="programm-course-spollers__item list__item text">Виды анестезии и способы ее применения</li>
+                    <li class="programm-course-spollers__item list__item text">Абсолютные и относительные противопоказания. Доп соглашение с клиентом прилагается.</li>
+                  </ul>
+                  <ul class="programm-course-spollers__list list">
+                    <li class="programm-course-spollers__item list__item text">Обзор пигментов. Как выбрать пигменты. Советы начинающим мастерам</li>
+                    <li class="programm-course-spollers__item list__item text">Перекрытие старого татуажа</li>
+                    <li class="programm-course-spollers__item list__item text">Постопроцедурный уход и этапы заживления</li>
+                    <li class="programm-course-spollers__item list__item text">Обзор аппаратов. Виды и конфигурация игл.</li>
+                    <li class="programm-course-spollers__item list__item text">Идеальный эскиз. Как научиться делать ровные одинаковые брови за 5 мин. Все лайфхаки и фишки.
+                    </li>
+                    <li class="programm-course-spollers__item list__item text">Правила и ошибки построения эскиза каждой зоны.</li>
+                  </ul>
+                  <ul class="programm-course-spollers__list list">
+                    <li class="programm-course-spollers__item list__item text">Бархатная межресничка.</li>
+                    <li class="programm-course-spollers__item list__item text">Как развить свой бизнес и стать вострбованным мастером.</li>
+                    <li class="programm-course-spollers__item list__item text">Психология работы с клиентом и определение своей целевой аудитории.</li>
+                    <li class="programm-course-spollers__item list__item text">Практика на бумаге</li>
+                    <li class="programm-course-spollers__item list__item text">Отработка на латексе</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="programm-course-spollers__spoller">
+              <button type="button" data-spoller class="programm-course-spollers__btn d-flex jc-sb direction-row-rev _icon-arrow-down img-w-100p">
+                <div class="programm-course-spollers__title-text d-flex ai-center">
+                  <div class="programm-course-spollers__oval-line">
+                    <div class="w-space-no-wrap title title_s30">2 день.</div>
+                    <div class="programm-course-spollers__oval-img">
+                      <img class="img-fluid" src="@img/coursers/line.svg" alt="Oval" />
+                    </div>
+                  </div>
+                  <div class="programm-course-spollers__title text-start">Основы татуажа губ, бровей и межреснички</div>
+                </div>
+              </button>
+              <div class="programm-course-spollers__body">
+                <div class="programm-course-spollers__content d-grid col-lg-33 col-md-50">
+                  <ul class="programm-course-spollers__list list">
+                    <li class="programm-course-spollers__item list__item text">Перманентный макияж. Виды техник</li>
+                    <li class="programm-course-spollers__item list__item text">Рабочее место мастера. Обзор основных и вспомогательных расходных материалов для проведения процедуы</li>
+                    <li class="programm-course-spollers__item list__item text">Подготовка полного списка материалов и инструментов, необходимых для работы мастера перманентного макияжа</li>
+                    <li class="programm-course-spollers__item list__item text">Асептика и антисептика</li>
+                    <li class="programm-course-spollers__item list__item text">Виды анестезии и способы ее применения</li>
+                    <li class="programm-course-spollers__item list__item text">Абсолютные и относительные противопоказания. Доп соглашение с клиентом прилагается.</li>
+                  </ul>
+                  <ul class="programm-course-spollers__list list">
+                    <li class="programm-course-spollers__item list__item text">Обзор пигментов. Как выбрать пигменты. Советы начинающим мастерам</li>
+                    <li class="programm-course-spollers__item list__item text">Перекрытие старого татуажа</li>
+                    <li class="programm-course-spollers__item list__item text">Постопроцедурный уход и этапы заживления</li>
+                    <li class="programm-course-spollers__item list__item text">Обзор аппаратов. Виды и конфигурация игл.</li>
+                    <li class="programm-course-spollers__item list__item text">Идеальный эскиз. Как научиться делать ровные одинаковые брови за 5 мин. Все лайфхаки и фишки.
+                    </li>
+                    <li class="programm-course-spollers__item list__item text">Правила и ошибки построения эскиза каждой зоны.</li>
+                  </ul>
+                  <ul class="programm-course-spollers__list list">
+                    <li class="programm-course-spollers__item list__item text">Бархатная межресничка.</li>
+                    <li class="programm-course-spollers__item list__item text">Как развить свой бизнес и стать вострбованным мастером.</li>
+                    <li class="programm-course-spollers__item list__item text">Психология работы с клиентом и определение своей целевой аудитории.</li>
+                    <li class="programm-course-spollers__item list__item text">Практика на бумаге</li>
+                    <li class="programm-course-spollers__item list__item text">Отработка на латексе</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="programm-course-spollers__spoller">
+              <button type="button" data-spoller class="programm-course-spollers__btn d-flex jc-sb direction-row-rev _icon-arrow-down img-w-100p">
+                <div class="programm-course-spollers__title-text d-flex ai-center">
+                  <div class="programm-course-spollers__oval-line">
+                    <div class="w-space-no-wrap title title_s30">3 день.</div>
+                    <div class="programm-course-spollers__oval-img">
+                      <img class="img-fluid" src="@img/coursers/line.svg" alt="Oval" />
+                    </div>
+                  </div>
+                  <div class="programm-course-spollers__title text-start">Закрепление материала + выпускной</div>
+                </div>
+              </button>
+              <div class="programm-course-spollers__body">
+                <div class="programm-course-spollers__content d-grid col-lg-33 col-md-50">
+                  <ul class="programm-course-spollers__list list">
+                    <li class="programm-course-spollers__item list__item text">Перманентный макияж. Виды техник</li>
+                    <li class="programm-course-spollers__item list__item text">Рабочее место мастера. Обзор основных и вспомогательных расходных материалов для проведения процедуы</li>
+                    <li class="programm-course-spollers__item list__item text">Подготовка полного списка материалов и инструментов, необходимых для работы мастера перманентного макияжа</li>
+                    <li class="programm-course-spollers__item list__item text">Асептика и антисептика</li>
+                    <li class="programm-course-spollers__item list__item text">Виды анестезии и способы ее применения</li>
+                    <li class="programm-course-spollers__item list__item text">Абсолютные и относительные противопоказания. Доп соглашение с клиентом прилагается.</li>
+                  </ul>
+                  <ul class="programm-course-spollers__list list">
+                    <li class="programm-course-spollers__item list__item text">Обзор пигментов. Как выбрать пигменты. Советы начинающим мастерам</li>
+                    <li class="programm-course-spollers__item list__item text">Перекрытие старого татуажа</li>
+                    <li class="programm-course-spollers__item list__item text">Постопроцедурный уход и этапы заживления</li>
+                    <li class="programm-course-spollers__item list__item text">Обзор аппаратов. Виды и конфигурация игл.</li>
+                    <li class="programm-course-spollers__item list__item text">Идеальный эскиз. Как научиться делать ровные одинаковые брови за 5 мин. Все лайфхаки и фишки.
+                    </li>
+                    <li class="programm-course-spollers__item list__item text">Правила и ошибки построения эскиза каждой зоны.</li>
+                  </ul>
+                  <ul class="programm-course-spollers__list list">
+                    <li class="programm-course-spollers__item list__item text">Бархатная межресничка.</li>
+                    <li class="programm-course-spollers__item list__item text">Как развить свой бизнес и стать вострбованным мастером.</li>
+                    <li class="programm-course-spollers__item list__item text">Психология работы с клиентом и определение своей целевой аудитории.</li>
+                    <li class="programm-course-spollers__item list__item text">Практика на бумаге</li>
+                    <li class="programm-course-spollers__item list__item text">Отработка на латексе</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       </section>
+       <section class="learn-new bg-white course-detail-form">
+        <div class="learn-new__container course-detail-form__container d-flex ai-start jc-sb">
+          <div class="learn-new__preview">
+            <div class="learn-new__preview-content">
+              <div class="learn-new__img img-bg img-bg_b-r">
+                <img class="img-fluid" data-src="@img/learn-new/1.jpg" alt="Валентина Куликова">
+              </div>
+            </div>
+          </div>
+          <form data-ajax data-popup-message="#popup-form" action="files/sendmail/sendmail.php" method="POST" class="learn-new__form form d-flex direction-col" >
+            <h2 class="form__title title title_black d-flex direction-col">
+              <span>Записаться </span>
+              <span class="as-end dark-pink-color">на курс</span>
+            </h2>
+            <div class="form__item d-flex">
+              <label class="form__label text text_black" for="form-name">Здравствуйте, меня зовут*</label>
+              <input type="text" id="form-name" data-required name="name" data-error="Введите ваше имя" placeholder="" class="form__input input flx-auto">
+            </div>
+            <div class="form__item d-flex">
+              <label class="form__label text text_black" for="form-phone">Со мной можно связаться по телефону*</label>
+              <input type="text" id="form-phone" data-required="phone" name="phone" data-error="Введите ваш номер телефона" placeholder="" class="form__input input flx-auto">
+            </div>
+            <div class="form__item d-flex">
+              <label class="form__label text text_black" for="form-email">или по e-mail</label>
+              <input type="text" id="form-email" data-error="Введите ваш E-mail" data-required="email" name="form[email]" placeholder="" class="form__input input flx-auto">
+            </div>
+            <div class="form__item d-flex">
+              <p class="text text_black fw-900">Курс</p>
+              <p class="text text_black fw-900 pink-color">Базовый курс для начинающих «COOL-master»</p>
+            </div>
+            <div class="form__item d-flex">
+              <p class="text text_black fw-900">Стоимость курса</p>
+              <p class="text text_black fw-900 pink-color">32 000 гривен</p>
+            </div>
+            <div class="form__item form__item_mobi-mb-64 d-flex ai-center checkbox">
+              <input id="c_1" data-required checked data-error="Пункт должен быть отмечен" class="checkbox__input" type="checkbox" value="1" name="form[checkbox]">
+              <label for="c_1" class="checkbox__label _icon-check"><span class="checkbox__text form__label text text_black">Согласен на обработку персональных данных</span></label>
+            </div>
+            <button type="submit" class="button form__btn"><span>хочу на бесплатный урок</span></button> 
+          </form>
+        </div>
+      </section>
+      <section class="find-out bg-dark">
+        <div class="find-out__container">
+          <div class="elipse find-out__elipse">
+            <img src="@img/icons/elipse.svg" alt="Elipse" />
+          </div>
+          <div class="find-out__top">
+            <h2 class="find-out__title title title_s40">
+              <span class="pink-color">Узнайте<br></span> о нас больше
+            </h2>
+            <p class="find-out__text text">
+              Предлагаем познакомить с нашей гимназией, преподавателями, студентами и клиентами
+            </p>
+          </div>
+          <div class="find-out__item find-out__item_1">
+            <div class="find-out__img">
+              <img class="img-fluid" data-src="@img/coursers/3.jpg" alt="все курсы">
+            </div>
+            <a href="coursers.html" class="find-out__btn other-link other-link_w _icon-arrow-right-sm d-flex-inline ai-center direction-row-rev jc-end">
+              <span>все курсы</span>
+            </a>
+          </div>
+          <div class="find-out__item find-out__item_2">
+            <div class="find-out__img">
+              <img class="img-fluid" data-src="@img/find-out/6.jpg" alt="гимназия">
+            </div>
+            <a href="404.html" class="find-out__btn other-link other-link_w _icon-arrow-right-sm d-flex-inline ai-center direction-row-rev jc-end">
+              <span>гимназия</span>
+            </a>
+          </div>
+          <div class="find-out__item find-out__item_3">
+            <div class="find-out__img">
+              <img class="img-fluid" data-src="@img/find-out/3.jpg" alt="отзывы">
+            </div>
+            <a href="reviews.html" class="find-out__btn other-link other-link_w _icon-arrow-right-sm d-flex-inline ai-center direction-row-rev jc-end">
+              <span>отзывы</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+  </body>
+</html>

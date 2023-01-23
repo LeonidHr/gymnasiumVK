@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Контакты" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{ "header": "header" })
+      <main class="page bg-white">
+        <section class="page-contacts section-pb-120">
+          <div class="page-contacts__container">
+            <h1 class="page-contacts__title title title_black">Контакты</h1>
+            <div class="page-contacts__row">
+              <a href="https://goo.gl/maps/w5Ub29YXDWqKeXCx9" class="page-contacts__link">
+                <div class="page-contacts__label _icon-location italic-text d-flex ai-center">Адрес гимназии</div>
+                <p class="page-contacts__text text text_black">п. Лукъяновский, Киевская область, 01, Киев, 88907</p>
+              </a>
+              <a class="page-contacts__link">
+                <div class="page-contacts__label italic-text d-flex ai-center">Время работы</div>
+                <div class="page-contacts__text text text_black">
+                  <p class="w-space-no-wrap">пн-пт с 9:00 до 20:00</p>
+                  <p class="w-space-no-wrap">сб-вс с 10:00 до 19:00</p> 
+                </div>
+              </a>
+              <a href="tel:+38080000000" class="page-contacts__link page-contacts__link_mobi-dn">
+                <div class="page-contacts__label italic-text _icon-location d-flex ai-center _icon-tel">Телефон</div>
+                <p class="page-contacts__text text text_black">+380 800 000 00</p>
+              </a>
+              <a href="mailto:permanent@gmail.com" class="page-contacts__link">
+                <div class="page-contacts__label italic-text _icon-location d-flex ai-center _icon-mail">Email</div>
+                <p class="page-contacts__text text text_black">permanent@gmail.com</p>
+              </a>
+              <div class="page-contacts__link">
+                <div class="page-contacts__label italic-text">Социальные сети</div>
+                <div class="sociable sociable_dark d-flex ai-center">
+                  <a href="https://www.instagram.com/yesboss_pmu" target="_blank" class="sociable__icon icon-link _icon-instagram"></a>
+                  <a href="https://www.facebook.com/yesboss_pmu" target="_blank" class="sociable__icon icon-link _icon-fb"></a>
+                  <a href="https://www.vk.com/yesboss_pmu" target="_blank" class="sociable__icon icon-link _icon-vk"></a>
+                </div>
+              </div>
+            </div>
+            <div class="page-contacts__map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d755.0484436145001!2d30.493810415927115!3d50.4658673159925!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce7107351d95%3A0x7a00341bb5cf9f16!2z0YPQuy4g0JvRg9C60YzRj9C90L7QstGB0LrQsNGPLCAxLCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1673987731688!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+  </body>
+</html>

@@ -1,0 +1,421 @@
+// Заголовки, загальні БЕМ блоки та інше...
+
+// Colors
+
+//========================================================================================================================================================
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: rem(8);
+
+  // .list__item
+
+  &__item {
+    display: flex;
+    gap: rem(18);
+
+    &::before{
+      content:'';
+      margin-top: rem(10);
+      flex: 0 0 rem(8);
+      width: rem(8);
+      height: rem(8);
+      border-radius: 50%;
+      background-color: $pinkColor;
+    }
+  }
+}
+
+
+.logo {
+  flex: 0 0;
+  @include adaptiveValue("flex-basis", 157, 110, 0, 1920, 1270);
+}
+.footer-link {
+  font-family: 'Alice';
+  font-size: rem(16);
+  line-height: 1.125;
+  color: #FFFFFF;
+  transition: all 0.3s ease 0s;
+
+  @media (any-hover: hover){
+    &:hover{
+      opacity: .5;
+    }
+  }
+}
+
+.title {
+  font-family: 'Alice';
+  @include adaptiveValue("font-size", 48, 36);
+  line-height: 140%;
+  color: #FFFFFF;
+
+  &_main {
+    @include adaptiveValue("font-size", 64, 36);
+    line-height: 100%;
+  }
+
+  // .title_s24
+
+  &_s24 {
+    font-size: rem(24);
+    line-height: 130%;
+  }
+
+  // .title_s30
+
+  &_s30 {
+    font-size: rem(30);
+    line-height: 130%;
+  }
+
+  // .title_grey
+
+  &_grey {
+    color: #8C8C8C;
+  }
+
+  // .title_mb-40
+
+  &_mb-40 {
+    margin-bottom: rem(40);
+  }
+
+	// .title_s40
+
+	&_s40 {
+    @include adaptiveValue("font-size", 40, 28);
+    line-height: 130%;
+  }
+
+  // .title_black
+
+  &_black {
+    color: rgba(31, 31, 31, 1);
+  }
+}
+
+.num {
+  font-family: 'Philosopher';
+  font-style: italic;
+  @include adaptiveValue("font-size", 32, 24);
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  color: rgba(140, 140, 140, 0.5);
+
+  &_w {
+    color: $whiteColor;
+  }
+} 
+
+.other-link {
+  font-family: "Alice";
+  font-size: rem(16);
+  line-height: 150%;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  gap: rem(9);
+  transition: all 0.3s ease 0s;
+
+  @media (any-hover: hover) {
+    &:hover {
+      color: $pinkColor;
+
+      &::before {
+        transform: translateX(10px);
+      }
+    }
+  }
+
+  &::before {
+    transition: all 0.5s ease 0s;
+    color: $greenColor;
+  }
+
+  @media (max-width: $mobile) {
+    &_mobi-dn {
+      span {
+        opacity: 0;
+      }
+    }
+  }
+
+  &_s14 {
+    font-size: rem(14);
+  }
+  &_w {
+    color: $whiteColor;
+  }
+}
+
+.text {
+  line-height: 190%;
+  color: $whiteColor;
+
+  &_black {
+    color: rgba(31, 31, 31, 1);
+  }
+
+  &_grey {
+    color: #8C8C8C;
+  }
+}
+
+.italic-text {
+  font-family: 'Philosopher';
+  font-style: italic;
+  line-height: 190%;
+  color: #8C8C8C;
+
+}
+
+.elipse {
+  position: absolute;
+  width: rem(924);
+  height: rem(314);
+}
+
+.oval-line {
+  position: relative;
+  white-space: nowrap;
+  margin-top: rem(10);
+  display: inline-block;
+
+  // .oval-line__img
+
+  &__img {
+    position: absolute;
+    top: -30%;
+    left: -20%;
+    width: 130%;  
+    height: 100%;
+  
+    @media (max-width:$mobileSmall){
+      // width: 100%; 
+      // left: -20%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.sociable {
+  @include adaptiveValue("gap", 20, 10);
+
+  // .sociable_white
+
+  &_white {
+    color: #8C8C8C;
+  }
+
+  // .sociable_dark
+
+  &_dark {
+    color: $mainColor;
+  }
+
+  // .sociable__icon
+
+  &__icon {
+    transition: all 0.3s ease 0s;
+    font-size: rem(20); 
+
+    @media (any-hover: hover){
+      &:hover{
+        opacity: .5;
+      }
+    }
+  }
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: rem(35);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: rem(24);
+
+  @media (max-width:$mobile) and (min-width:$mobileSmall){
+    left: rem(103);
+    transform: translateX(0);
+  }
+
+  .swiper-pagination-bullet {
+    background-color: $whiteColor;
+    border-radius: 50%;
+    width: rem(8);
+    height: rem(8);
+    position: relative;
+    cursor: pointer;
+    transition: all 0.7s ease 0s;
+
+    &::before{
+      content:'';
+      position: absolute;
+      top: rem(-11);
+      left: rem(-11);
+      border-radius: 50%;
+      width: rem(30);
+      height: rem(30);
+      border: 1px solid $greenColor;
+      transform: scale(0);
+      transition: all 0.7s ease 0s;
+      opacity: 0;
+    }
+  }
+
+
+  .swiper-pagination-bullet-active {
+    background: $greenColor;
+
+    &::before{
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  &__nums {
+    transform: translateX(0);
+    position: static !important;
+    .swiper-pagination-bullet {
+      background: transparent !important;
+      width: auto;
+      height: auto;
+      &:not(.swiper-pagination-bullet-active) {
+        display: none;
+      }
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+}
+
+.slider-button {
+  color:#8C8C8C;
+}
+
+.swiper-button-prev {
+  &::before{
+    transform: rotate(180deg);
+  }
+}
+
+.img-bg {
+  position: relative;
+
+  &::before{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $darkPinkColor;
+  }
+
+  // .img-bg_t-l
+
+  &_t-l {
+    &::before{
+      top: rem(-25);
+      left: rem(-25); 
+    }
+  }
+
+  // .img-bg_b-r
+
+  &_b-r {
+    &::before{
+      bottom: rem(-25);
+      right: rem(-25); 
+    }
+  }
+
+  // .img-bg_r
+
+  &_r {
+    &::before{
+      top: rem(-25);
+      right: rem(-25); 
+    }
+  }
+
+  // .img-bg_l
+
+  &_l {
+    &::before{
+      bottom: rem(-25);
+      left: rem(-25); 
+    }
+  }
+
+  img {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.section-pb-120 {
+  @include adaptiveValue("padding-bottom", 120, 90);
+}
+
+.hhv-pink {
+  transition: all 0.4s ease 0s;
+
+  @media (any-hover: hover){
+    &:hover{
+      color: $pinkColor;
+    }
+  }
+}
+
+.hhv-pink-dark {
+  transition: all 0.4s ease 0s;
+
+  @media (any-hover: hover){
+    &:hover{
+      color: $darkPinkColor;
+    }
+  }
+}
+
+.img-scale {
+  overflow: hidden;
+
+  img {
+    transition: all 0.4s ease-in 0s;
+  }
+
+  @media (any-hover: hover){
+    &:hover{
+      img {
+        transform: scale(1.3);
+      }
+    }
+  }
+}
+
+// colors
+
+.bg-white {
+  background-color:#fff;
+}
+.bg-dark {
+  background-color:$darkColor;
+}
+
+.pink-color {
+  color: $pinkColor;
+}
+.dark-pink-color {
+  color: $darkPinkColor;
+}
+.white-color {
+  color: $whiteColor;
+}

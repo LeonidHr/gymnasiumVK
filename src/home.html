@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Home Page" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{ "header": "header header_main" })
+      <main class="page">
+        <section class="mainscreen">
+          <section class="mainscreen__section">
+            <div class="mainscreen__image-ibg">
+              <img data-src="@img/mainscreen/1.jpg" alt="Background" />
+            </div>
+            <div class="mainscreen__container">
+              <h1 class="mainscreen__title title title_main">
+                Гимназия <span class="pink-color">перманентного макияжа.</span>
+              </h1>
+            </div>
+          </section>
+          <section class="mainscreen__section">
+            <div class="mainscreen__image-ibg">
+              <img data-src="@img/mainscreen/1.jpg" alt="Background" />
+            </div>
+            <div class="mainscreen__container">
+              <h2 class="mainscreen__title title title_main">
+                Гимназия <span class="pink-color">перманентного макияжа.</span>
+                <span class="oval-line">
+                  В. Куликовой
+                  <div class="oval-line__img">
+                    <img src="@img/icons/oval-line.svg" alt="Oval" />
+                  </div>
+                </span>
+              </h2>
+            </div>
+          </section>
+          <section class="mainscreen__section">
+            <div class="mainscreen__image-ibg">
+              <img data-src="@img/mainscreen/1.jpg" alt="Background" />
+            </div>
+          </section>
+          <section class="mainscreen__section">
+            <div class="mainscreen__image-ibg">
+              <img data-src="@img/mainscreen/2.jpg" alt="Background" />
+            </div>
+            <div class="mainscreen__container">
+              <h2 class="mainscreen__title title">
+                Обучение без воды. Теория в практике.
+              </h2>
+            </div>
+          </section>
+          <div id="trigger-main"></div>
+          <section class="mainscreen__section">
+            <div id="mainscreen-img" class="mainscreen__image-ibg">
+              <img data-src="@img/mainscreen/3.jpg" alt="Background" />
+            </div>
+            <div class="mainscreen__container">
+              <h2 id="mainscreen-title" class="mainscreen__title title">
+                Обучение без воды. Теория в практике.
+              </h2>
+              <button id="mainscreen-btn" data-popup="#popup-quiz" class="mainscreen__btn button" type="button">
+                <span>хочу стать мастером!</span>
+              </button>
+            </div>
+          </section>
+        </section>
+        <section class="founder">
+          <div class="founder__container">
+            <div data-da=".founder-slider__content,767,first" class="elipse founder__elipse">
+              <img src="@img/icons/elipse.svg" alt="Elipse" />
+            </div>
+            <div class="founder__top">
+              <h2 class="founder__title title">Валентина Куликова</h2>
+              <div class="founder__label">
+                Раскрывающая мифы о болях клиентов
+              </div>
+            </div>
+            <div data-watch class="founder-slider mouse-scroll-slider swiper">
+              <div class="founder-slider__wrapper swiper-wrapper">
+                <div class="founder-slider__slide swiper-slide">
+                  <div class="founder-slider__img">
+                    <img
+                      class="img-fluid"
+                      src="@img/founder/1.jpg"
+                      alt="Валентина Куликова"
+                    />
+                  </div>
+                </div>
+                <div class="founder-slider__slide swiper-slide">
+                  <div class="founder-slider__img">
+                    <img
+                      class="img-fluid"
+                      src="@img/founder/2.jpg"
+                      alt="Валентина Куликова"
+                    />
+                  </div>
+                </div>
+                <div class="founder-slider__slide swiper-slide">
+                  <div class="founder-slider__img">
+                    <img
+                      class="img-fluid"
+                      src="@img/founder/3.jpg"
+                      alt="Валентина Куликова"
+                    />
+                  </div>
+                </div>
+                <div class="founder-slider__slide swiper-slide">
+                  <div class="founder-slider__img">
+                    <img
+                      class="img-fluid"
+                      src="@img/founder/4.jpg"
+                      alt="Валентина Куликова"
+                    />
+                  </div>
+                </div>
+                <div class="founder-slider__slide swiper-slide">
+                  <div class="founder-slider__slide-body">
+                    <div class="founder-slider__img">
+                      <img
+                        class="img-fluid"
+                        src="@img/founder/5.jpg"
+                        alt="Валентина Куликова"
+                      />
+                    </div>
+                    <div
+                      data-da=".founder,767,last"
+                      class="founder-slider__content"
+                    >
+                      <h2 class="founder__title title">Валентина Куликова</h2>
+                      <div class="founder__label">
+                        Раскрывающая мифы о болях клиентов
+                      </div>
+                      <div class="founder__text text">
+                        <p>
+                          Я — Валентина Куликова, основатель гимназии
+                          перманентного макияжа. Действующий мастер
+                          и преподаватель, создатель техники самых естественных
+                          бровей «V-brows». Топ-100 самых успешных и знаменитых
+                          персон в lash&brow индустрии в 2020 году. Дважды
+                          призер и чемпион «Lashworld2020» по дизайну бровей
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination founder-slider__pagination"></div>
+            </div>
+          </div>
+        </section>
+        <section class="about">
+          <div class="about__container">
+            <h2 class="about__title title title_black">О гимназии</h2>
+            <div class="about__content">
+              <article class="about__item d-flex direction-col">
+                <div class="about__icon">
+                  <img
+                    class="img-fluid"
+                    data-src="@img/about/1.png"
+                    alt="Максимум практики"
+                  />
+                </div>
+                <div class="about__text text text_black">
+                  <p>
+                    <span class="dark-pink-color">Максимум практики</span> и
+                    только необходимая теория без воды! Знания, которые
+                    вы не найдете в интеренете и реальный опыт работы
+                  </p>
+                </div>
+              </article>
+              <article class="about__item d-flex direction-col">
+                <div class="about__icon">
+                  <img
+                    class="img-fluid"
+                    data-src="@img/about/2.png"
+                    alt="Только высококвалифицированные мастера"
+                  />
+                </div>
+                <div class="about__text text text_black">
+                  <p>
+                    Только
+                    <span class="dark-pink-color"
+                      >высококвалифицированные мастера</span
+                    >
+                    призеры, подтвердившие знания на международных конкурсах
+                  </p>
+                </div>
+              </article>
+              <article class="about__item d-flex direction-col">
+                <div class="about__icon">
+                  <img
+                    class="img-fluid"
+                    data-src="@img/about/3.png"
+                    alt="Каждую процедуру вы проводите от начала и до конца"
+                  />
+                </div>
+                <div class="about__text text text_black">
+                  <p>
+                    Каждую
+                    <span class="dark-pink-color"
+                      >процедуру вы проводите от начала и до конца,</span
+                    >
+                    как будто к вам уже пришел клиен
+                  </p>
+                </div>
+              </article>
+              <article class="about__item d-flex direction-col">
+                <div class="about__icon">
+                  <img
+                    class="img-fluid"
+                    data-src="@img/about/4.png"
+                    alt="Предоставляем всю информацию "
+                  />
+                </div>
+                <div class="about__text text text_black">
+                  <p>
+                    <span class="dark-pink-color"
+                      >Предоставляем всю информацию
+                    </span>
+                    о том, как развиваться дальше, привлекать клиентов, вести
+                    страницу в соц. сетях, оформлять портфолио
+                  </p>
+                </div>
+              </article>
+            </div>
+            <a href="#" class="about__btn other-link other-link_mobi-dn _icon-arrow-right-sm d-flex-inline ai-center direction-row-rev jc-end">
+              <span>подробнее о гимназии</span>
+            </a>
+          </div>
+        </section>
+        <section class="we-give">
+          <div class="we-give__container">
+            <div class="we-give__elipse elipse">
+              <img src="@img/icons/elipse.svg" alt="Elipse" />
+            </div>
+            <div style="position: relative; top: 30vh"></div>
+            <div id="trigger1"></div>
+            <div class="we-give__title-wrap d-flex direction-col jc-sb">
+              <div class="spacer s0"></div>
+              <h2
+                id="title-give"
+                class="we-give__title title title_main dark-pink-color prlx"
+              >
+                Что мы даём?
+              </h2>
+              <div id="trigger2"></div>
+              <div class="spacer s2"></div>
+            </div>
+            <div id="pinContainer">
+              <div id="prlx-top" class="we-give__content d-flex prxl-top">
+                <ul class="we-give__items items-give d-flex direction-col-rev">
+                  <li
+                    data-da=".items-give_big,992,first"
+                    class="items-give__item"
+                  >
+                    <div class="items-give__num num">02</div>
+                    <div class="items-give__text text text_black">
+                      <p>
+                        <span class="dark-pink-color">Поддержка</span> после
+                        обучения в течении года!
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    data-da=".items-give_big,992,first"
+                    class="items-give__item"
+                  >
+                    <div class="items-give__num num">01</div>
+                    <div class="items-give__text text text_black">
+                      <p>
+                        <span class="dark-pink-color"
+                          >Индивидуальное обучение</span
+                        >
+                        один на один с тренером!
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+                <div id="img-give" class="we-give__img prlx">
+                  <img
+                    class="img-fluid"
+                    src="@img/we-give/1.jpg"
+                    alt="Валентина Куликова"
+                  />
+                </div>
+                <div class="spacer s0"></div>
+                <div id="trigger3"></div>
+                <ul class="we-give__items items-give items-give_big">
+                  <li class="items-give__item">
+                    <div class="items-give__num num">03</div>
+                    <div class="items-give__text text">
+                      <p>
+                        Предоставим все необходимое для максимально
+                        качественного и продуктивного обучения
+                      </p>
+                    </div>
+                  </li>
+                  <li class="items-give__item">
+                    <div class="items-give__num num">04</div>
+                    <div class="items-give__text text">
+                      <p>
+                        Помощь в продвижении и поиске клиентов сразу после
+                        обучения!
+                      </p>
+                    </div>
+                  </li>
+                  <li class="items-give__item">
+                    <div class="items-give__num num">05</div>
+                    <div class="items-give__text text">
+                      <p>
+                        Никаких доплат, предоставляем весь материал для
+                        практики!
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="whom">
+          <div class="whom__container d-flex direction-col">
+            <div class="whom__elipse elipse">
+              <img src="@img/icons/elipse.svg" alt="Elipse" />
+            </div>
+            <div data-watch class="whom-slider swiper">
+              <div class="whom-slider__wrapper swiper-wrapper">
+                <div class="whom-slider__slide swiper-slide d-flex ai-center jc-sb">
+                  <div class="whom-slider__content">
+                    <span class="whom-slider__oval-line oval-line">
+                      Кто Вы?
+                      <div class="oval-line__img">
+                        <img src="@img/icons/oval-line.svg" alt="Oval" />
+                      </div>
+                    </span>
+                    <h2 class="whom-slider__title title">Кому интересен наш курс?</h1>
+											<div class="whom-slider__label">Вы — косметолог</div>
+                      <div class="whom-slider__text text">
+												<p>
+													и хотите расширить спектор оказываемых вами услуг
+												</p>
+											</div>
+											<div class="whom-slider__controls d-flex ai-center">
+												<button class="swiper-button-prev slider-button slider-button_prev _icon-arrow-right"></button>
+												<div class="num num_w whom-slider__num">01</div>
+												<button class="swiper-button-next slider-button slider-button_next _icon-arrow-right"></button>
+											</div>
+                      <button data-popup="#popup-quiz" data-da=".whom__container,767" type="button" class="whom-slider__btn button"><span>Мне нужен этот курс!</span></button>
+                    </div>
+                  <div class="whom-slider__img">
+                    <div class="swiper-pagination whom-slider__pagination"></div>
+                    <img class="img-fluid" src="@img/whom/1.jpg" alt="Вы — косметолог">
+                  </div>
+                </div>
+                <div class="whom-slider__slide swiper-slide d-flex ai-center jc-sb">
+                  <div class="whom-slider__content">
+                    <span class="whom-slider__oval-line oval-line">
+                      Кто Вы?
+                      <div class="oval-line__img">
+                        <img src="@img/icons/oval-line.svg" alt="Oval" />
+                      </div>
+                    </span>
+                    <h2 class="whom-slider__title title">Кому интересен наш курс?</h1>
+											<div class="whom-slider__label">Вы — визажист</div>
+                      <div class="whom-slider__text text">
+												<p>
+													и хотите сделать шаг вперед в освоении профессии
+												</p>
+											</div>
+											<div class="whom-slider__controls d-flex ai-center">
+												<button class="swiper-button-prev slider-button slider-button_prev _icon-arrow-right"></button>
+												<div class="num num_w whom-slider__num">02</div>
+												<button class="swiper-button-next slider-button slider-button_next _icon-arrow-right"></button>
+											</div>
+                      <button data-popup="#popup-quiz"  type="button" class="whom-slider__btn button"><span>Мне нужен этот курс!</span></button>
+                  </div>
+                  <div class="whom-slider__img">
+                    <div class="swiper-pagination whom-slider__pagination"></div>
+                    <img class="img-fluid" src="@img/whom/2.jpg" alt="Вы — визажист">
+                  </div>
+                </div>
+                <div class="whom-slider__slide swiper-slide d-flex ai-center jc-sb">
+                  <div class="whom-slider__content">
+                    <span class="whom-slider__oval-line oval-line">
+                      Кто Вы?
+                      <div class="oval-line__img">
+                        <img src="@img/icons/oval-line.svg" alt="Oval" />
+                      </div>
+                    </span>
+                    <h2 class="whom-slider__title title">Кому интересен наш курс?</h1>
+											<div class="whom-slider__label">Вы — мастер маникюра</div>
+                      <div class="whom-slider__text text">
+												<p>
+													и хотите начать работать с другими частями тела клиентов
+												</p>
+											</div>
+											<div class="whom-slider__controls d-flex ai-center">
+												<button class="swiper-button-prev slider-button slider-button_prev _icon-arrow-right"></button>
+												<div class="num num_w whom-slider__num">03</div>
+												<button class="swiper-button-next slider-button slider-button_next _icon-arrow-right"></button>
+											</div>
+                      <button data-popup="#popup-quiz"  type="button" class="whom-slider__btn button"><span>Мне нужен этот курс!</span></button>
+                  </div>
+                  <div class="whom-slider__img">
+                    <div class="swiper-pagination whom-slider__pagination"></div>
+                    <img class="img-fluid" src="@img/whom/3.jpg" alt="Вы — мастер маникюра">
+                  </div>
+                </div>
+                <div class="whom-slider__slide swiper-slide d-flex ai-center jc-sb">
+                  <div class="whom-slider__content">
+                    <span class="whom-slider__oval-line oval-line">
+                      Кто Вы?
+                      <div class="oval-line__img">
+                        <img src="@img/icons/oval-line.svg" alt="Oval" />
+                      </div>
+                    </span>
+                    <h2 class="whom-slider__title title">Кому интересен наш курс?</h1>
+											<div class="whom-slider__label">Вы — художник</div>
+                      <div class="whom-slider__text text">
+												<p>
+													и хотите реализовать свой творческий потенциал
+												</p>
+											</div>
+											<div class="whom-slider__controls d-flex ai-center">
+												<button class="swiper-button-prev slider-button slider-button_prev _icon-arrow-right"></button>
+												<div class="num num_w whom-slider__num">04</div>
+												<button class="swiper-button-next slider-button slider-button_next _icon-arrow-right"></button>
+											</div>
+                      <button data-popup="#popup-quiz"  type="button" class="whom-slider__btn button"><span>Мне нужен этот курс!</span></button>
+                  </div>
+                  <div class="whom-slider__img">
+                    <div class="swiper-pagination whom-slider__pagination"></div>
+                    <img class="img-fluid" src="@img/whom/4.jpg" alt="Вы — художник">
+                  </div>
+                </div>
+                <div class="whom-slider__slide swiper-slide d-flex ai-center jc-sb">
+                  <div class="whom-slider__content">
+                    <span class="whom-slider__oval-line oval-line">
+                      Кто Вы?
+                      <div class="oval-line__img">
+                        <img src="@img/icons/oval-line.svg" alt="Oval" />
+                      </div>
+                    </span>
+                    <h2 class="whom-slider__title title">Кому интересен наш курс?</h1>
+											<div class="whom-slider__label">Вы — самоучка</div>
+                      <div class="whom-slider__text text">
+												<p>
+													и хотите наконец выйти на уровень мастера-профессионала
+												</p>
+											</div>
+											<div class="whom-slider__controls d-flex ai-center">
+												<button class="swiper-button-prev slider-button slider-button_prev _icon-arrow-right"></button>
+												<div class="num num_w whom-slider__num">05</div>
+												<button class="swiper-button-next slider-button slider-button_next _icon-arrow-right"></button>
+											</div>
+                      <button data-popup="#popup-quiz"  type="button" class="whom-slider__btn button"><span>Мне нужен этот курс!</span></button>
+                  </div>
+                  <div class="whom-slider__img">
+                    <div class="swiper-pagination whom-slider__pagination"></div>
+                    <img class="img-fluid" src="@img/whom/5.jpg" alt="Вы — самоучка">
+                  </div>
+                </div>
+                <div class="whom-slider__slide swiper-slide d-flex ai-center jc-sb">
+                  <div class="whom-slider__content">
+                    <span class="whom-slider__oval-line oval-line">
+                      Кто Вы?
+                      <div class="oval-line__img">
+                        <img src="@img/icons/oval-line.svg" alt="Oval" />
+                      </div>
+                    </span>
+                    <h2 class="whom-slider__title title">Кому интересен наш курс?</h1>
+											<div class="whom-slider__label">Вы — самоучка</div>
+											<div class="whom-slider__controls d-flex ai-center">
+												<button class="swiper-button-prev slider-button slider-button_prev _icon-arrow-right"></button>
+												<div class="num num_w whom-slider__num">06</div>
+												<button class="swiper-button-next slider-button slider-button_next _icon-arrow-right"></button>
+											</div>
+                      <button data-popup="#popup-quiz"  type="button" class="whom-slider__btn button"><span>Мне нужен этот курс!</span></button>
+                  </div>
+                  <div class="whom-slider__img">
+                    <div class="swiper-pagination whom-slider__pagination"></div>
+                    <img class="img-fluid" src="@img/whom/6.jpg" alt="Вы — самоучка">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="you-get">
+          <div class="you-get__container">
+            <div class="you-get__elipse elipse">
+              <img src="@img/icons/elipse.svg" alt="Elipse" />
+            </div>
+            <h2 class="you-get__title title title_black d-flex direction-col m-auto">
+              <span>Что <span class="dark-pink-color">вы получите</span></span>
+              <span class="as-end">в ходе обучения?</span>
+            </h2>
+            <div class="you-get-slider swiper">
+              <div class="you-get-slider__wrapper swiper-wrapper">
+                <article class="you-get-slider__slide swiper-slide">
+                  <div class="you-get-slider__icon">
+                    <img class="img-fluid" data-src="@img/you-get/1.png" alt="Твердую теоретическую подготовку">
+                  </div>
+                  <h5 class="you-get-slider__title">Твердую теоретическую подготовку</h5>
+                  <p class="you-get-slider__text text text_black">
+                    Что дает возможность развиваться самостоятельно и отвечать на вопросы клиентов исчерпывающе
+                  </p>
+                </article>
+                <article class="you-get-slider__slide swiper-slide">
+                  <div class="you-get-slider__icon">
+                    <img class="img-fluid" data-src="@img/you-get/2.png" alt="Все необходимое, чтобы приступить к работе">
+                  </div>
+                  <h5 class="you-get-slider__title">Все необходимое, чтобы приступить к работе</h5>
+                  <p class="you-get-slider__text text text_black">
+                    <span class="dark-pink-color">Предоставим все необходимое</span> во время обучения: оборудование, расходные материалы, моделей
+                  </p>
+                </article>
+                <article class="you-get-slider__slide swiper-slide">
+                  <div class="you-get-slider__icon">
+                    <img class="img-fluid" data-src="@img/you-get/3.png" alt="Пошаговый план общения с клиентами">
+                  </div>
+                  <h5 class="you-get-slider__title">Пошаговый план общения с клиентами</h5>
+                  <p class="you-get-slider__text text text_black">
+                    От первой встречи до рекомендаций по уходу после процедуры и дальнейшей работе с клиентом
+                  </p>
+                </article>
+                <article class="you-get-slider__slide swiper-slide">
+                  <div class="you-get-slider__icon">
+                    <img class="img-fluid" data-src="@img/you-get/4.png" alt="Навык практической работы с кожей">
+                  </div>
+                  <h5 class="you-get-slider__title">Навык практической работы с кожей</h5>
+                  <p class="you-get-slider__text text text_black">
+                    Ключевой аспект в работе мастера — опыта работы с кожей. Поэтому мы сделали большой 
+                    <span class="dark-pink-color">акцент на практике</span>
+                  </p>
+                </article>
+                <article class="you-get-slider__slide swiper-slide">
+                  <div class="you-get-slider__icon">
+                    <img class="img-fluid" data-src="@img/you-get/5.png" alt="Уверенность в себе, как в мастере">
+                  </div>
+                  <h5 class="you-get-slider__title">Уверенность в себе, как в мастере</h5>
+                  <p class="you-get-slider__text text text_black">
+                    <span class="dark-pink-color">Навык работы с тремя базовыми зонами</span>  — бровями, ресницами, губами позволит уверенно работать с клиенитом
+                  </p>
+                </article>
+                <article class="you-get-slider__slide swiper-slide">
+                  <div class="you-get-slider__icon">
+                    <img class="img-fluid" data-src="@img/you-get/6.png" alt="">
+                  </div>
+                  <h5 class="you-get-slider__title">Специализированное оборудование</h5>
+                  <p class="you-get-slider__text text text_black">
+                    <span class="dark-pink-color">Предоставляем инструменты,</span> которые используют в работе  преподаватели-мастера нашей гимназии
+                  </p>
+                </article>
+                <article class="you-get-slider__slide swiper-slide">
+                  <div class="you-get-slider__icon">
+                    <img class="img-fluid" data-src="@img/you-get/7.png" alt="Навык индивидуальной работы с каждым клиентом">
+                  </div>
+                  <h5 class="you-get-slider__title">Навык индивидуальной работы с каждым клиентом</h5>
+                  <p class="you-get-slider__text text text_black">Лишь учитывая цветотип, особенности кожи, формы лица, естественного цвета волос, можно оказать качественную услугу</p>
+                </article>
+                <article class="you-get-slider__slide swiper-slide">
+                  <div class="you-get-slider__icon">
+                    <img class="img-fluid" data-src="@img/you-get/8.png" alt="Девушки-модели">
+                  </div>
+                  <h5 class="you-get-slider__title">Девушки-модели</h5>
+                  <p class="you-get-slider__text text text_black">
+                    <span class="dark-pink-color">Опыт работы с профессиональным моделями,</span> оторые полностью доверяющие вам, как начинающему мастеру
+                  </p>
+                </article>
+                <article class="you-get-slider__slide swiper-slide">
+                  <div class="you-get-slider__icon">
+                    <img class="img-fluid" data-src="@img/you-get/9.png" alt="Расходные материалы">
+                  </div>
+                  <h5 class="you-get-slider__title">Расходные материалы</h5>
+                  <p class="you-get-slider__text text text_black">Которые будут необходимые для проведения процедуры от начала и до конца</p>
+                </article>
+                <article class="you-get-slider__slide swiper-slide">
+                  <div class="you-get-slider__icon">
+                    <img class="img-fluid" data-src="@img/you-get/10.png" alt="Кабинет для проведения процедур">
+                  </div>
+                  <h5 class="you-get-slider__title">Кабинет для проведения процедур</h5>
+                  <p class="you-get-slider__text text text_black">Полностью <span class="dark-pink-color">соответствующий всем стандартам</span></p>
+                </article>
+                <article class="you-get-slider__slide swiper-slide">
+                  <div class="you-get-slider__icon">
+                    <img class="img-fluid" data-src="@img/you-get/11.png" alt="Методическое пособие">
+                  </div>
+                  <h5 class="you-get-slider__title">Методическое пособие</h5>
+                  <p class="you-get-slider__text text text_black">Которое содержит всю необходимую теорию и элементы практики</p>
+                </article>
+                <article class="you-get-slider__slide swiper-slide">
+                  <div class="you-get-slider__icon">
+                    <img class="img-fluid" data-src="@img/you-get/1.png" alt="Пигменты ведущих и самых известных фирм мира">
+                  </div>
+                  <h5 class="you-get-slider__title">Пигменты ведущих и самых известных фирм мира</h5>
+                  <p class="you-get-slider__text text text_black"><span class="dark-pink-color">Качественные материалы</span> для работы с клиентами</p>
+                </article>
+              </div>
+              <div class="you-get-slider__controls d-flex ai-center jc-end">
+                <button type="button" class="slider-button swiper-button-prev _icon-arrow-right"></button>
+                <div class="swiper-pagination swiper-pagination__nums you-get-slider__pagination"></div>
+                <button type="button" class="slider-button swiper-button-next _icon-arrow-right"></button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="ready">
+          <div class="ready__container">
+            <div id="trigger4"></div>
+            <div class="ready__title-wrap">
+              <h2 data-watch class="ready__title title title_main">
+                Готовы <br> к <span class="pink-color">новой жизни?</span><br> Тогда пора начинать!
+              </h2>
+            </div>
+          </div>
+          <div class="ready__image-wrap">
+            <div class="ready__image-ibg prlx"><img data-src="@img/coursers/2.jpg" alt="Background"></div>
+          </div>
+        </section>
+        <section class="coursers">
+          <div class="coursers__container">
+            <h2 class="coursers__title title">Курсы гимназии</h2>
+            <div class="coursers__content">
+              <article class="coursers__item item-coursers d-flex direction-col">
+                <div class="coursers__image-ibg">
+                  <img data-src="@img/coursers/1.jpg" alt="Базовый курс БРОВИ «COOL-brows»">
+                  <div class="coursers__oval-line">
+                    <span>Фотосессия в подарок!</span>
+                    <div class="coursers-oval__img">
+                      <img class="img-fluid" src="@img/coursers/line.svg" alt="Oval" />
+                    </div>
+                  </div>
+                </div>
+                <h5 class="item-coursers__title">Базовый курс БРОВИ «COOL-brows»</h5>
+                <p class="item-coursers__text text">Брови в технике пудровое напыление и в авторской технике 3-d «V-brow»</p>
+                <div class="item-coursers__info info-item-coursers d-flex jc-sb ai-center">
+                  <div class="info-item-coursers__content">
+                    <div class="info-item-coursers__num num num_w">8000 ₴</div>
+                    <div class="info-item-coursers__label">Стартовый набор в подарок!</div>
+                  </div>
+                  <a class="info-item-coursers__btn button" href="details-course.html"><span>записаться на курс</span></a>
+                </div>
+              </article>
+              <article class="coursers__item item-coursers d-flex direction-col">
+                <div class="coursers__oval-line">
+                  <span>Курс по удалению Ремувером в подарок! </span>
+                  <div class="coursers-oval__img">
+                    <img class="img-fluid" src="@img/coursers/line.svg" alt="Oval" />
+                  </div>
+                </div>
+                <div class="coursers-img-slider swiper">
+                  <div class="coursers-img-slider__wrapper swiper-wrapper">
+                    <div class="coursers-img-slider__slide swiper-slide">
+                      <div class="coursers__image-ibg">
+                        <img data-src="@img/coursers/2.jpg" alt="Базовый курс БРОВИ «COOL-master»">
+                      </div>
+                    </div>
+                    <div class="coursers-img-slider__slide swiper-slide">
+                      <div class="coursers__image-ibg">
+                        <img data-src="@img/coursers/3.jpg" alt="Базовый курс БРОВИ «COOL-master»">
+                      </div>
+                    </div>
+                    <div class="coursers-img-slider__slide swiper-slide">
+                      <div class="coursers__image-ibg">
+                        <img data-src="@img/coursers/1.jpg" alt="Базовый курс БРОВИ «COOL-master»">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination coursers-img-slider__pagination"></div>
+                </div>
+                <h5 class="item-coursers__title">Базовый курс БРОВИ «COOL-master»</h5>
+                <p class="item-coursers__text text">Курс по обучению перманентному макияжу 3 зон «V-permanent»</p>
+                <div class="item-coursers__info info-item-coursers d-flex jc-sb ai-center">
+                  <div class="info-item-coursers__content">
+                    <div class="info-item-coursers__num num num_w">21000 ₴</div>
+                    <div class="info-item-coursers__label">Стартовый набор в подарок!</div>
+                  </div>
+                  <a class="info-item-coursers__btn button" href="details-course.html"><span>записаться на курс</span></a>
+                </div>
+              </article>
+              <article class="coursers__item item-coursers d-flex direction-col">
+                <div class="coursers__image-ibg">
+                  <img data-src="@img/coursers/3.jpg" alt="Курс повышения квалификации 3 зоны «COOL-upgrade»">
+                  <div class="coursers__oval-line">
+                    <span>Что получу в подарок?</span>
+                    <div class="coursers-oval__img">
+                      <img class="img-fluid" src="@img/coursers/line.svg" alt="Oval" />
+                    </div>
+                  </div>
+                </div>
+                <h5 class="item-coursers__title">Курс повышения квалификации 3 зоны «COOL-upgrade»</h5>
+                <p class="item-coursers__text text">Освой новейшие современные техники перманентного макияжа, чтобы повысить цену на услуги</p>
+                <div class="item-coursers__info info-item-coursers d-flex jc-sb ai-center">
+                  <div class="info-item-coursers__content">
+                    <div class="info-item-coursers__num num num_w">14000 ₴</div>
+                    <div class="info-item-coursers__label">Стартовый набор в подарок!</div>
+                  </div>
+                  <a class="info-item-coursers__btn button" href="details-course.html"><span>записаться на курс</span></a>
+                </div>
+              </article>
+              <a href="#"
+              class="coursers__btn other-link other-link_w _icon-arrow-right-sm d-flex-inline ai-center direction-row-rev jc-end">
+              <span>другие программы обучения</span>
+            </a>
+            </div>
+          </div>
+        </section>
+        <section class="histories">
+          <div class="histories__container">
+            <div class="histories__elipse elipse">
+              <img src="@img/icons/elipse.svg" alt="Elipse" />
+            </div>
+            <h2 class="histories__title title title_black text-center">
+              Истории
+              <span class="histories__oval-line">
+                <span>успеха</span>
+                <div class="histories__oval-img">
+                  <img class="img-fluid" src="@img/histories/line.svg" alt="Oval" />
+                </div>
+              </span>
+            </h2>
+            <div class="histories-slider swiper">
+              <div class="histories-slider__wrapper swiper-wrapper">
+                <div class="histories-slider__slide histories-slider__slide_0 swiper-slide d-flex jc-sb">
+                  <div class="histories-slider__content">
+                    <div class="histories-slider__top">
+                      <div data-da=".histories-slider__slide_0 .histories-slider__top,992" class="histories-slider__controls d-flex ai-center">
+                        <button type="button" class="slider-button swiper-button-prev _icon-arrow-right"></button>
+                        <div class="swiper-pagination swiper-pagination__nums histories-slider__pagination"></div>
+                        <button type="button" class="slider-button swiper-button-next _icon-arrow-right"></button>
+                      </div>
+                      <div class="histories-slider__label">Мастер</div>
+                      <div class="h4 histories-slider__title">Кристина</div>
+                      <p class="histories-slider__text">
+                        Меня зовут Кристина. Мой путь в сфере перманентного макияжа начался в 2019 году. Я родила ребенка и ушла в декрет, работать полный рабочий день не было возможности и я решила, что хочу заниматься чем- то, что будет прибыльно, интересно и не будет занимать меня полностью. Я долго думала, что это будет, но точно знала, что это будет что-то из бьюти-сферы. Я долго перебирала возможные варианты- ресницы, ногсти, волосы, окрашивание бровей. И тут, наткнувшись в одной из соц.сетей на старничку мастера Перманентного макияжа, я все поняла. Я хочу быть мастером... 
+                        <a class="fw-900" href="#">читать полностью</a>
+                      </p>
+                    </div>
+                    <div class="histories-slider__info d-flex ai-center jc-sb">
+                      <div class="histories-slider__info-title">
+                        Хочешь, так же? Пройди квиз, и мы подберем курс за 30 секунд
+                      </div>
+                      <button data-popup="#popup-quiz" class="histories-slider__btn button" type="button"><span>пройти
+                        квиз</span></button>
+                    </div>
+                  </div>
+                  <div class="histories-slider__images">
+                    <div class="histories-img-slider-main swiper">
+                      <div class="histories-img-slider-main__wrapper swiper-wrapper">
+                        <div class="histories-img-slider-main__slide swiper-slide">
+                          <div class="histories-img-slider-main__img">
+                            <img class="img-fluid" data-src="@img/whom/3.jpg" alt="Мастер Кристина">
+                          </div>
+                        </div>
+                        <div class="histories-img-slider-main__slide swiper-slide">
+                          <div class="histories-img-slider-main__img">
+                            <img class="img-fluid" data-src="@img/histories/1.jpg" alt="Мастер Кристина">
+                          </div>
+                        </div>
+                        <div class="histories-img-slider-main__slide swiper-slide">
+                          <div class="histories-img-slider-main__img">
+                            <img class="img-fluid" data-src="@img/histories/2.jpg" alt="Мастер Кристина">
+                          </div>
+                        </div>
+                        <div class="histories-img-slider-main__slide swiper-slide">
+                          <div class="histories-img-slider-main__img">
+                            <img class="img-fluid" data-src="@img/histories/3.jpg" alt="Мастер Кристина">
+                          </div>
+                        </div>
+                        <div class="histories-img-slider-main__slide swiper-slide">
+                          <div class="histories-img-slider-main__img">
+                            <img class="img-fluid" data-src="@img/histories/4.jpg" alt="Мастер Кристина">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="histories-img-slider-main__pagination swiper-pagination"></div>
+                    </div>
+                    <div class="histories-img-slider histories-img-slider_0 swiper">
+                      <div class="histories-img-slider__wrapper swiper-wrapper">
+                        <div class="histories-img-slider__slide swiper-slide">
+                          <div class="histories-img-slider__img">
+                            <img class="img-fluid" data-src="@img/whom/3.jpg" alt="Мастер Кристина">
+                          </div>
+                        </div>
+                        <div class="histories-img-slider__slide swiper-slide">
+                          <div class="histories-img-slider__img">
+                            <img class="img-fluid" data-src="@img/histories/1.jpg" alt="Мастер Кристина">
+                          </div>
+                        </div>
+                        <div class="histories-img-slider__slide swiper-slide">
+                          <div class="histories-img-slider__img">
+                            <img class="img-fluid" data-src="@img/histories/2.jpg" alt="Мастер Кристина">
+                          </div>
+                        </div>
+                        <div class="histories-img-slider__slide swiper-slide">
+                          <div class="histories-img-slider__img">
+                            <img class="img-fluid" data-src="@img/histories/3.jpg" alt="Мастер Кристина">
+                          </div>
+                        </div>
+                        <div class="histories-img-slider__slide swiper-slide">
+                          <div class="histories-img-slider__img">
+                            <img class="img-fluid" data-src="@img/histories/4.jpg" alt="Мастер Кристина">
+                          </div>
+                        </div>
+                      </div>
+                    </div> 
+                  </div> 
+                </div>
+                <div class="histories-slider__slide histories-slider__slide_1 swiper-slide d-flex jc-sb">
+                  <div class="histories-slider__content">
+                    <div class="histories-slider__top">
+                      <div data-da=".histories-slider__slide_1 .histories-slider__top,992" class="histories-slider__controls d-flex ai-center">
+                        <button type="button" class="slider-button swiper-button-prev _icon-arrow-right"></button>
+                        <div class="swiper-pagination swiper-pagination__nums histories-slider__pagination"></div>
+                        <button type="button" class="slider-button swiper-button-next _icon-arrow-right"></button>
+                      </div>
+                      <div class="histories-slider__label">Мастер</div>
+                      <div class="h4 histories-slider__title">Светлана</div>
+                      <p class="histories-slider__text">
+                        Меня зовут Светлана. Мой путь в сфере перманентного макияжа начался в 2017 году. Я родила ребенка и ушла в декрет, работать полный рабочий день не было возможности и я решила, что хочу заниматься чем- то, что будет прибыльно, интересно и не будет занимать меня полностью. Я долго думала, что это будет, но точно знала, что это будет что-то из бьюти-сферы. Я долго перебирала возможные варианты- ресницы, ногсти, волосы, окрашивание бровей. И тут, наткнувшись в одной из соц.сетей на старничку мастера Перманентного макияжа, я все поняла. Я хочу быть мастером... 
+                        <a class="fw-900" href="#">читать полностью</a>
+                      </p>
+                    </div>
+                    <div class="histories-slider__info d-flex ai-center jc-sb">
+                      <div class="histories-slider__info-title">
+                        Хочешь, так же? Пройди квиз, и мы подберем курс за 30 секунд
+                      </div>
+                      <button data-popup="#popup-quiz" class="histories-slider__btn button" type="button"><span>пройти
+                        квиз</span></button>
+                    </div>
+                  </div>
+                  <div class="histories-slider__images">
+                    <div class="histories-img-slider-main swiper">
+                      <div class="histories-img-slider-main__wrapper swiper-wrapper">
+                        <div class="histories-img-slider-main__slide swiper-slide">
+                          <div class="histories-img-slider-main__img">
+                            <img class="img-fluid" data-src="@img/whom/2.jpg" alt="Мастер Светлана">
+                          </div>
+                        </div>
+                        <div class="histories-img-slider-main__slide swiper-slide">
+                          <div class="histories-img-slider-main__img">
+                            <img class="img-fluid" data-src="@img/whom/2.jpg" alt="Мастер Светлана">
+                          </div>
+                        </div>
+                        <div class="histories-img-slider-main__slide swiper-slide">
+                          <div class="histories-img-slider-main__img">
+                            <img class="img-fluid" data-src="@img/whom/2.jpg" alt="Мастер Светлана">
+                          </div>
+                        </div>
+                        <div class="histories-img-slider-main__slide swiper-slide">
+                          <div class="histories-img-slider-main__img">
+                            <img class="img-fluid" data-src="@img/whom/2.jpg" alt="Мастер Светлана">
+                          </div>
+                        </div>
+                        <div class="histories-img-slider-main__slide swiper-slide">
+                          <div class="histories-img-slider-main__img">
+                            <img class="img-fluid" data-src="@img/whom/2.jpg" alt="Мастер Светлана">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="histories-img-slider-main__pagination swiper-pagination"></div>
+                    </div>
+                    <div class="histories-img-slider histories-img-slider_1 swiper">
+                      <div class="histories-img-slider__wrapper swiper-wrapper">
+                        <div class="histories-img-slider__slide swiper-slide">
+                          <div class="histories-img-slider__img">
+                            <img class="img-fluid" data-src="@img/whom/2.jpg" alt="Мастер Светлана">
+                          </div>
+                        </div>
+                        <div class="histories-img-slider__slide swiper-slide">
+                          <div class="histories-img-slider__img">
+                            <img class="img-fluid" data-src="@img/whom/2.jpg" alt="Мастер Светлана">
+                          </div>
+                        </div>
+                        <div class="histories-img-slider__slide swiper-slide">
+                          <div class="histories-img-slider__img">
+                            <img class="img-fluid" data-src="@img/whom/2.jpg" alt="Мастер Светлана">
+                          </div>
+                        </div>
+                        <div class="histories-img-slider__slide swiper-slide">
+                          <div class="histories-img-slider__img">
+                            <img class="img-fluid" data-src="@img/whom/2.jpg" alt="Мастер Светлана">
+                          </div>
+                        </div>
+                        <div class="histories-img-slider__slide swiper-slide">
+                          <div class="histories-img-slider__img">
+                            <img class="img-fluid" data-src="@img/whom/2.jpg" alt="Мастер Светлана">
+                          </div>
+                        </div>
+                      </div>
+                    </div> 
+                  </div> 
+                </div>
+                <div class="histories-slider__slide histories-slider__slide_2 swiper-slide d-flex jc-sb">
+                  <div class="histories-slider__content">
+                    <div class="histories-slider__top">
+                      <div data-da=".histories-slider__slide_2 .histories-slider__top,992" class="histories-slider__controls d-flex ai-center">
+                        <button type="button" class="slider-button swiper-button-prev _icon-arrow-right"></button>
+                        <div class="swiper-pagination swiper-pagination__nums histories-slider__pagination"></div>
+                        <button type="button" class="slider-button swiper-button-next _icon-arrow-right"></button>
+                      </div>
+                      <div class="histories-slider__label">Мастер</div>
+                      <div class="h4 histories-slider__title">Маргатита</div>
+                      <p class="histories-slider__text">
+                        Меня зовут Маргатита. Мой путь в сфере перманентного макияжа начался в 2019 году. Я родила ребенка и ушла в декрет, работать полный рабочий день не было возможности и я решила, что хочу заниматься чем- то, что будет прибыльно, интересно и не будет занимать меня полностью. Я долго думала, что это будет, но точно знала, что это будет что-то из бьюти-сферы. Я долго перебирала возможные варианты- ресницы, ногсти, волосы, окрашивание бровей. И тут, наткнувшись в одной из соц.сетей на старничку мастера Перманентного макияжа, я все поняла. Я хочу быть мастером... 
+                        <a class="fw-900" href="#">читать полностью</a>
+                      </p>
+                    </div>
+                    <div class="histories-slider__info d-flex ai-center jc-sb">
+                      <div class="histories-slider__info-title">
+                        Хочешь, так же? Пройди квиз, и мы подберем курс за 30 секунд
+                      </div>
+                      <button data-popup="#popup-quiz" class="histories-slider__btn button" type="button"><span>пройти
+                        квиз</span></button>
+                    </div>
+                  </div>
+                  <div class="histories-slider__images">
+                    <div class="histories-img-slider-main swiper">
+                      <div class="histories-img-slider-main__wrapper swiper-wrapper">
+                        <div class="histories-img-slider-main__slide swiper-slide">
+                          <div class="histories-img-slider-main__img">
+                            <img class="img-fluid" data-src="@img/whom/2.jpg" alt="Мастер Маргатита">
+                          </div>
+                        </div>
+                        <div class="histories-img-slider-main__slide swiper-slide">
+                          <div class="histories-img-slider-main__img">
+                            <img class="img-fluid" data-src="@img/whom/4.jpg" alt="Мастер Маргатита">
+                          </div>
+                        </div>
+                        <div class="histories-img-slider-main__slide swiper-slide">
+                          <div class="histories-img-slider-main__img">
+                            <img class="img-fluid" data-src="@img/whom/4.jpg" alt="Мастер Маргатита">
+                          </div>
+                        </div>
+                        <div class="histories-img-slider-main__slide swiper-slide">
+                          <div class="histories-img-slider-main__img">
+                            <img class="img-fluid" data-src="@img/whom/4.jpg" alt="Мастер Маргатита">
+                          </div>
+                        </div>
+                        <div class="histories-img-slider-main__slide swiper-slide">
+                          <div class="histories-img-slider-main__img">
+                            <img class="img-fluid" data-src="@img/whom/4.jpg" alt="Мастер Маргатита">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="histories-img-slider-main__pagination swiper-pagination"></div>
+                    </div>
+                    <div class="histories-img-slider histories-img-slider_2 swiper">
+                      <div class="histories-img-slider__wrapper swiper-wrapper">
+                        <div class="histories-img-slider__slide swiper-slide">
+                          <div class="histories-img-slider__img">
+                            <img class="img-fluid" data-src="@img/whom/4.jpg" alt="Мастер Маргатита">
+                          </div>
+                        </div>
+                        <div class="histories-img-slider__slide swiper-slide">
+                          <div class="histories-img-slider__img">
+                            <img class="img-fluid" data-src="@img/whom/4.jpg" alt="Мастер Маргатита">
+                          </div>
+                        </div>
+                        <div class="histories-img-slider__slide swiper-slide">
+                          <div class="histories-img-slider__img">
+                            <img class="img-fluid" data-src="@img/whom/4.jpg" alt="Мастер Маргатита">
+                          </div>
+                        </div>
+                        <div class="histories-img-slider__slide swiper-slide">
+                          <div class="histories-img-slider__img">
+                            <img class="img-fluid" data-src="@img/whom/4.jpg" alt="Мастер Маргатита">
+                          </div>
+                        </div>
+                        <div class="histories-img-slider__slide swiper-slide">
+                          <div class="histories-img-slider__img">
+                            <img class="img-fluid" data-src="@img/whom/4.jpg" alt="Мастер Маргатита">
+                          </div>
+                        </div>
+                      </div>
+                    </div> 
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="sociable-section">
+          <div class="sociable-section__container">
+            <div class="sociable-section__top text-center">
+              <h2 class="sociable-section__title title title_black">Мы в социальных сетях</h2>
+              <a href="https://www.instagram.com/yesboss_pmu/" class="sociable-section__link d-flex ai-center jc-center _icon-instagram sociable-section-link">yesboss_pmu</a>
+            </div>
+            <div class="sociable-section__content text-center">
+              <a href="https://www.instagram.com/yesboss_pmu/" class="sociable-section__image-ibg">
+                <img data-src="@img/sociable/1.jpg" alt="Сылка на пост в Instagram">
+                <div class="sociable-section__wrap d-flex ai-center">
+                  <div class="sociable-section__img-link sociable-section-link sociable-section-link_w m-auto d-flex direction-col-rev block-center _icon-arrow-right-sm">перейти к посту instagram</div>
+                </div>
+              </a>
+              <a href="https://www.instagram.com/yesboss_pmu/" class="sociable-section__image-ibg">
+                <img data-src="@img/sociable/2.jpg" alt="Сылка на пост в Instagram">
+                <div class="sociable-section__wrap d-flex ai-center">
+                  <div class="sociable-section__img-link sociable-section-link sociable-section-link_w m-auto d-flex direction-col-rev block-center _icon-arrow-right-sm">перейти к посту instagram</div>
+                </div>
+              </a>
+              <a href="https://www.instagram.com/yesboss_pmu/" class="sociable-section__image-ibg">
+                <img data-src="@img/sociable/3.jpg" alt="Сылка на пост в Instagram">
+                <div class="sociable-section__wrap d-flex ai-center">
+                  <div class="sociable-section__img-link sociable-section-link sociable-section-link_w m-auto d-flex direction-col-rev block-center _icon-arrow-right-sm">перейти к посту instagram</div>
+                </div>
+              </a>
+              <a href="https://www.instagram.com/yesboss_pmu/" class="sociable-section__image-ibg">
+                <img data-src="@img/sociable/4.jpg" alt="Сылка на пост в Instagram">
+                <div class="sociable-section__wrap d-flex ai-center">
+                  <div class="sociable-section__img-link sociable-section-link sociable-section-link_w m-auto d-flex direction-col-rev block-center _icon-arrow-right-sm">перейти к посту instagram</div>
+                </div>
+              </a>
+              <a href="https://www.instagram.com/yesboss_pmu/" class="sociable-section__image-ibg">
+                <img data-src="@img/sociable/5.jpg" alt="Сылка на пост в Instagram">
+                <div class="sociable-section__wrap d-flex ai-center">
+                  <div class="sociable-section__img-link sociable-section-link sociable-section-link_w m-auto d-flex direction-col-rev block-center _icon-arrow-right-sm">перейти к посту instagram</div>
+                </div>
+              </a>
+              <a href="https://www.instagram.com/yesboss_pmu/" class="sociable-section__image-ibg">
+                <img data-src="@img/sociable/6.jpg" alt="Сылка на пост в Instagram">
+                <div class="sociable-section__wrap d-flex ai-center">
+                  <div class="sociable-section__img-link sociable-section-link sociable-section-link_w m-auto d-flex direction-col-rev block-center _icon-arrow-right-sm">перейти к посту instagram</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="learn-new">
+          <div class="learn-new__container d-flex ai-start jc-sb">
+            <div class="learn-new__elipse elipse">
+              <img src="@img/icons/elipse.svg" alt="Elipse" />
+            </div>
+            <div class="learn-new__preview">
+              <div class="learn-new__preview-content">
+                <div class="learn-new__img">
+                  <img class="img-fluid" data-src="@img/learn-new/1.jpg" alt="Валентина Куликова">
+                </div>
+                <a href="#" class="learn-new__btn other-link other-link_w _icon-arrow-right-sm d-flex-inline ai-center direction-row-rev jc-end">
+                  <span>СКАЧАТЬ ПРЕЗЕНТАЦИЮ О ГИМНАЗИИ</span>
+                </a>
+              </div>
+            </div>
+            <form data-ajax data-popup-message="#popup-form" action="files/sendmail/sendmail.php" method="POST" class="learn-new__form form d-flex direction-col" >
+              <h2 data-da=".learn-new__container,992,first" class="form__title title d-flex direction-col">
+                <span>Научимся новому</span>
+                <span class="as-end">вместе? Сделаем</span>
+                <span>жизнь ярче!</span>
+              </h2>
+              <div class="form__item d-flex">
+                <label class="form__label" for="form-name">Здравствуйте, меня зовут*</label>
+                <input type="text" id="form-name" data-required name="name" data-error="Введите ваше имя" placeholder="" class="form__input input flx-auto">
+              </div>
+              <div class="form__item d-flex">
+                <label class="form__label" for="form-learn">Я планирую научиться*</label>
+                <select name="learn" class="form__select" id="form-learn" data-required data-error="Выберите пункт" data-class-modif="form">
+                  <option selected></option>
+                  <option value="1">Брови «COOL-brows»</option>
+                  <option value="2">3 зоны: губы, брови, глаза</option>
+                  <option value="3">Губы «COOL-lips»</option>
+                  <option value="4">Глаза «COOL-eyes» </option>
+                </select>
+              </div>
+              <div class="form__item d-flex">
+                <label class="form__label" for="form-phone">Со мной можно связаться по телефону*</label>
+                <input type="text" id="form-phone" data-required="phone" name="phone" data-error="Введите ваш номер телефона" placeholder="" class="form__input input flx-auto">
+              </div>
+              <div class="form__item d-flex">
+                <label class="form__label" for="form-email">или по e-mail</label>
+                <input type="text" id="form-email" data-error="Введите ваш E-mail" data-required="email" name="form[email]" placeholder="" class="form__input input flx-auto">
+              </div>
+              <div class="form__item form__item_mb-40 d-flex">
+                <label class="form__label" for="form-additionally">Дополнительно я хотела бы уточнить</label>
+                <input type="text" id="form-additionally" name="additionally" placeholder="" class="form__input input flx-auto">
+              </div>
+              <div class="form__item form__item_mobi-mb-64 d-flex ai-center checkbox">
+                <input id="c_1" data-required checked data-error="Пункт должен быть отмечен" class="checkbox__input" type="checkbox" value="1" name="form[checkbox]">
+                <label for="c_1" class="checkbox__label _icon-check"><span class="checkbox__text form__label">Согласен на обработку персональных данных</span></label>
+              </div>
+              <button type="submit" class="button form__btn"><span>хочу на бесплатный урок</span></button> 
+            </form>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+    @@include('html/_js.htm',{})
+  </body>
+</html>
